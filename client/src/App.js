@@ -7,6 +7,10 @@ import SignIn from "./pages/Sign-In";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+// import Title from "./components/Title";
+// import MentorCard from "./components/MentorCard";
+
+// import Movies from "./pages/Movies";
 
 const App = () => (
   <Router>
