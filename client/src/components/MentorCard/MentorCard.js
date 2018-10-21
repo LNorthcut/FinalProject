@@ -3,13 +3,16 @@ import "./MentorCard.css";
 
 const MentorCard = props => (
   <div className="card">
-    {/* <a href="http://google.com">
-      link */}
     <div className="img-container">
       <img alt={props.name} src={props.image} />
-      <button type="button" class="btn btn-success">
+
+      {/* <button
+        type="button"
+        className="btn btn-success"
+        onClick={() => this.goToExpertPage(props.id)}
+      >
         Check Me Out
-      </button>
+      </button> */}
     </div>
     <div className="content">
       <ul>

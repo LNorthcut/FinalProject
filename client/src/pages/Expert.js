@@ -7,13 +7,10 @@ import "./MentorsPage.css";
 import mentors from "./mentors.json";
 // import "./MentorCard.css";
 
-class Mentor extends Component {
+class Expert extends Component {
   state = {
+    // expert,
     mentors
-  };
-
-  goToExpertPage = id => {
-    alert(" Testing : " + id);
   };
 
   // removeMentor = id => {
@@ -29,31 +26,22 @@ class Mentor extends Component {
     console.log("Props: ", this.props);
     return (
       <Wrapper className="wrapper-main">
-        <Title>Our Mentors </Title>
+        <Title>Expert Page </Title>
 
         {this.state.mentors.map(mentor => (
-          <div>
-            <MentorCard
-              // removeMentor={this.removeMentor}
-              id={mentor.id}
-              key={mentor.id}
-              image={mentor.image}
-              name={mentor.name}
-              department={mentor.department}
-              location={mentor.location}
-            />
-            <button
-              type="button"
-              className="btn btn-success"
-              onClick={() => this.goToExpertPage(mentor.id)}
-            >
-              Go To Expert Page>
-            </button>
-          </div>
+          <MentorCard
+            // removeMentor={this.removeMentor}
+            id={mentor.id}
+            key={mentor.id}
+            image={mentor.image}
+            name={mentor.name}
+            department={mentor.department}
+            location={mentor.location}
+          />
         ))}
       </Wrapper>
     );
   }
 }
 
-export default Mentor;
+export default Expert;
